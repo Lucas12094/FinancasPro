@@ -33,7 +33,7 @@ export function Hero() {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="xl" asChild>
-                <Link to="/auth">
+                <Link to="/auth?mode=signup">
                   Começar Grátis
                   <ArrowRight className="ml-2" />
                 </Link>
