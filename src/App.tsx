@@ -9,6 +9,14 @@ import Dashboard from "./pages/Dashboard";
 import Transactions from "./pages/Transactions";
 import ImportStatement from "./pages/ImportStatement";
 import NotFound from "./pages/NotFound";
+import ManualEntry from "./pages/features/ManualEntry";
+import UploadStatement from "./pages/features/UploadStatement";
+import VisualDashboard from "./pages/features/VisualDashboard";
+import AutoCategorization from "./pages/features/AutoCategorization";
+import SmartAlerts from "./pages/features/SmartAlerts";
+import FlexibleEditing from "./pages/features/FlexibleEditing";
+import ExportReports from "./pages/features/ExportReports";
+import AdvancedFilters from "./pages/features/AdvancedFilters";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +32,14 @@ const App = () => (
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/dashboard/transactions" element={<Transactions />} />
           <Route path="/dashboard/import" element={<ImportStatement />} />
+          <Route path="/features/manual-entry" element={<ManualEntry />} />
+          <Route path="/features/upload" element={<UploadStatement />} />
+          <Route path="/features/dashboard" element={<VisualDashboard />} />
+          <Route path="/features/categorization" element={<AutoCategorization />} />
+          <Route path="/features/alerts" element={<SmartAlerts />} />
+          <Route path="/features/editing" element={<FlexibleEditing />} />
+          <Route path="/features/export" element={<ExportReports />} />
+          <Route path="/features/filters" element={<AdvancedFilters />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
